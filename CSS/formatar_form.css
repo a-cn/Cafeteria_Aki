@@ -1,0 +1,151 @@
+div.dados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em 1em;
+}
+
+div.pedido{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+div.finalizar{
+    text-align: center;
+}
+
+div.finalizar > h3{
+    text-align: center;
+}
+
+input{
+    color: var(--licorice);
+    font-family: var(--fonte_corpo);
+    font-size: 1.5vw;
+    outline: none;
+    border: solid 0.124rem var(--licorice);
+    border-radius: 0.5em;
+    padding: 0.3125em 0.3125em;
+    background-color: rgba(255,255,255,0.7);
+    margin-top: 0.4em;
+}
+
+textarea{
+    width: 50%;
+    color: var(--licorice);
+    font-family: var(--fonte_corpo);
+    font-size: 1.5vw;
+    outline: none;
+    border: solid 0.124rem var(--licorice);
+    border-radius: 0.5em;
+    padding: 0.3125em 0.3125em;
+    background-color: rgba(255,255,255,0.7);
+    margin-top: 0.4em;
+}
+
+.info{
+    width: 70%;
+}
+
+input[type=radio]{
+    width: 1.5vw;
+    height: auto;
+}
+
+.opcao_pagamento{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1.5vw;
+}
+
+.qtd{
+    width: 2.5em;
+    font-size: 1.2vw;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 0.4em;
+}
+
+input[type=submit], input[type=reset]{
+    width: 15%;
+    border: solid 0.125em var(--licorice);
+    background-color: var(--rosy_brown);
+    outline: none;
+    cursor: pointer;
+    color: var(--licorice);
+    font-size: 1.5vw;
+    font-weight: bold;
+    transition: all 1s ease;
+    margin: 0;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+	background-color: var(--verde);
+    transition: all 1s ease;
+}
+
+input[type=submit]{
+    margin-left: 1em;
+}
+
+input[type=reset]{
+    margin-right: 1em;
+}
+
+
+@media screen and (max-width: 480px){
+    .corpo > h1{
+        margin-bottom: 0.5em;
+    }
+
+    #formulario{
+        width: 80%;
+        margin: auto;
+    }
+
+    #formulario > h2{
+        text-align: center;
+    }
+
+    div.dados{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        font-size: 2.5vw;
+    }
+
+    div.campo_dados{
+        width: 70%;
+        margin: auto;
+    }
+    
+    div.pedido{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        margin-top: 0.4em;
+    }
+
+    input{
+        font-size: 2.5vw;
+    }
+    
+    textarea{
+        width: 100%;
+        font-size: 2.5vw;
+    }
+    
+    .info{
+        width: 100%;
+    }
+    
+    .qtd{
+        width: 1.5em;
+        font-size: 2.2vw;
+    }
+    
+    input[type=submit], input[type=reset]{
+        width: 20%;
+        font-size: 2.5vw;
+    }
+}

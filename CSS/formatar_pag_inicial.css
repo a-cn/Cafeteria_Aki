@@ -1,0 +1,73 @@
+img.logo{
+    width: 10em;
+    height: auto;
+}
+
+section.welcome{
+    text-align: center;
+    padding: 0.9375em 2em;
+    border-bottom: 0.125em dashed var(--licorice);
+    background-image: url("../Elementos/fundo_claro.png");
+}
+
+section.welcome h2{
+    text-align: center;
+    text-shadow: 0px 3px 5px var(--verde);
+    font-family: var(--fonte_titulos);
+    font-size: 2.7vw;
+}
+
+div.produtos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+div.itens{
+    display: flex;
+    align-items: center;
+}
+
+img.item{
+    width: 6em;
+    height: auto;
+    border-radius: 0.5em;
+    margin-right: 1em;
+    transition: all 0.4s;
+}
+
+img.item:hover{
+    transform: scale(1.07);
+    transition: all 0.4s;
+}
+
+div.descricao{
+    flex-grow: 1;
+}
+
+div.descricao{
+    margin: 0;
+}
+
+
+@media screen and (max-width: 480px){
+    div.produtos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+    }
+
+    img.item{
+        width: 7.5em;
+        height: auto;
+    }
+
+    section.welcome h2{
+        font-size: 3.7vw;
+    }
+
+    img.logo{
+        width: 13em;
+        height: auto;
+    }
+}

@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Oregano';
+    src: url('../Fontes/Oregano/Oregano-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../Fontes/Dosis/Dosis-VariableFont_wght.ttf') format('truetype');
+}
+
+:root{
+    --verde: #8EFB88;
+    --azul: #90E0CC;
+    --marrom: #6D5553;
+    --branco: #FFFFFF;
+    --fundo: #E6D7D8;
+
+    --licorice: #251C18;
+    --beaver: #A7857A;
+    --rosy_brown: #BBA199;
+    --champagne: #F1D5C5;
+
+    --fonte_titulos: "Oregano", cursive;
+    --fonte_corpo: "Dosis", sans-serif;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-image: url("../Elementos/fundo.png");
+	background-size: cover;
+	background-attachment: fixed;
+    font-size: 1.5vw;
+    font-family: var(--fonte_corpo);
+    color: var(--licorice);
+}
+
+div.total{
+    width: 70%;
+    height: 100%;
+	margin: auto;
+	background-color: var(--fundo);
+	border-right: 0.125em solid var(--licorice);
+	border-left: 0.125em solid var(--licorice);
+}
+
+section{
+    padding: 1.25em 2em;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 0px 3px 5px var(--verde);
+    font-family: var(--fonte_titulos);
+    font-size: 3.2vw;
+}
+
+h2{ 
+    text-align: justify;
+    text-shadow: 0px 3px 5px var(--azul);
+    font-size: 2.5vw;
+}
+
+h3{
+    text-align: justify;
+    font-size: 1.5vw;
+}
+
+h4{
+    text-align: justify;
+    font-size: 1.1vw;
+}
+
+a{
+    color: var(--marrom);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+a:visited{
+    color: var(--beaver);
+    text-decoration: none;
+}
+
+a:hover{
+    color: #50CEAE;
+    transition: all 0.5s;
+}
+
+header{
+    width: 100%;
+    border-bottom: 0.125em dashed var(--licorice);
+}
+
+#header_content{
+    background-color: var(--marrom);
+    padding: 0.9375em 0.625em;
+    display: flex;
+    justify-content: center;
+}
+
+button.superior{
+    width: 26%;
+    border-radius: 0.5em;
+    padding: 0.4em 0.3125em;
+    margin: auto;
+    border: solid 0.125em var(--azul);
+    background-color: transparent;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--azul);
+    font-family: var(--fonte_corpo);
+    font-size: 1.5vw;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+button.superior a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+button.superior:hover{
+    background-color: var(--fundo);
+    color: var(--licorice);
+    border-color: var(--licorice);
+    transition: all 0.5s;
+}
+
+img.icon{
+    height: 4vw;
+    width: auto;
+}
+
+footer{
+    width: 100%;
+    text-align: left;
+    color: var(--azul);
+    font-size: 1.2vw;
+    border-top: 0.125em dashed var(--licorice);
+}
+
+#footer_content{
+    background-color: var(--marrom);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1.25em 2em;
+}
+
+#footer_coluna1{
+    display: flex;
+    gap: 1.5em;
+    margin-top: 0.7em;
+}
+
+#footer_coluna1 .footer-link{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+#footer_coluna1 .footer-link:hover{
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+#footer_coluna1 .footer-link i{
+    font-size: 1.25em;
+}
+
+#instagram{
+    background: linear-gradient(#7F37C9, #FF2992, #FF9807);
+}
+
+#facebook{
+    background-color: #4267B3;
+}
+
+#whatsapp{
+    background-color: #25D366;
+}
+
+#footer_copyright{
+    background-color: var(--licorice);
+    text-align: center;
+    font-size: 1vw;
+    color: var(--verde);
+    padding: 0.4em 2em;
+}
+
+@media screen and (max-width: 480px){
+    div.total{
+        width: 85%;
+    }
+
+    h1{
+        font-size: 4.2vw;
+    }
+    
+    h2{
+        font-size: 3.5vw;
+    }
+    
+    h3{
+        font-size: 2.5vw;
+    }
+    
+    h4{
+        font-size: 2.1vw;
+    }
+
+    button.superior{
+        width: 32%;
+        padding: 0.4em 0.3125em;
+        font-size: 2.5vw;
+    }
+    
+    img.icon{
+        height: 5vw;
+        width: auto;
+    }
+
+    footer{
+        font-size: 2.1vw;
+    }
+
+    #footer_copyright{
+        font-size: 1.7vw;
+    }
+}
